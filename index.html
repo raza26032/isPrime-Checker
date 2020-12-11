@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsPrime</title>
+</head>
+
+<body>
+    <script>
+        //////////////////////////////IS PRIME/////////////////////
+
+        var num = +prompt("Enter Any Number To Check Prime :")
+
+        function isPrime(num) {
+            if (num == 1) {
+                return false
+            } else if (num == 2) {
+                return true
+            } else {
+                for (var x = 2; x < num; x++) {
+                    if (num % x === 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        document.write(isPrime(num))
+    </script>
+
+</body>
+
+</html>
